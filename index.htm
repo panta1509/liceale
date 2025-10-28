@@ -2,6 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seleziona un indirizzo</title>
     <style>
         body {
@@ -49,9 +50,14 @@
             transform: scale(1.05);
         }
 
+        /* Mobile: una colonna e riquadri un po’ più grandi */
         @media (max-width: 500px) {
             .addresses {
                 grid-template-columns: 1fr;
+            }
+            .address-link {
+                font-size: 20px;
+                padding: 25px 35px;
             }
         }
     </style>
@@ -59,7 +65,7 @@
 <body>
 
     <h1>Seleziona un indirizzo:</h1>
-    
+
     <div class="addresses">
         <a href="scientifico.html" class="address-link">Scientifico</a>
         <a href="classico.html" class="address-link">Classico</a>
@@ -69,6 +75,3 @@
 
 </body>
 </html>
-
-
-
